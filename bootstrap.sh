@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ORIGINAL_REPO='git://github.com/vadus1/rails4_template.git'
+ORIGINAL_REPO='git://github.com/vadus1/rails_template.git'
 
 usage()
 {
@@ -59,13 +59,13 @@ if [ -n "$name" ]; then
     rm -rf .git
 
     echo "Именую проект"
-    perl -i -p -e "s/Rails4Template/$name/g" */**/*.rb **/*.rb Rakefile
+    perl -i -p -e "s/RailsTemplate/$name/g" */**/*.rb **/*.rb Rakefile
 
     echo "Устанавливаю настройки базы"
     cp ./config/database.yml.example ./config/database.yml
-    perl -i -p -e "s/ttt/$lc_name/g" ./config/database.yml
+    perl -i -p -e "s/RailsTemplate/$lc_name/g" ./config/database.yml
 
-    pwd | grep -v rails4_template | rm ./bootstrap.sh # Самоуничтажаемся
+    pwd | grep -v rails_template | rm ./bootstrap.sh # Самоуничтажаемся
 
     bundle
 
