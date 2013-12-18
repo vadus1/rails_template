@@ -1,0 +1,33 @@
+en:
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    include_blank:
+      hotel:
+        hotel_kind_id: 'Any'
+
+    error_notification:
+      default_message: "Please review the problems below:"
+      blank: "Can't be empty"
+    confirm: "Are you sure?"
+    button:
+      disable_with:
+        sending: We send...
+        saving: We save...
+        waiting: Wait...
+    labels:
+      defaults:
+        name: Name
+        title: Name
+    placeholders:
+      defaults:
+        title: Name
+    hints:
+      defaults:
+        price: rub.
