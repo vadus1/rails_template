@@ -94,6 +94,7 @@ gem 'gravatar-ultimate'
 #gem 'forgery'
 #gem 'ffaker'
 
+gem 'russian'
 
 # Вьюхи и презентеры
 gem 'active_link_to'
