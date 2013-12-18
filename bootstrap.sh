@@ -63,7 +63,7 @@ if [ -n "$name" ]; then
 
     echo "Устанавливаю настройки базы"
     cp ./config/database.yml.example ./config/database.yml
-    perl -i -p -e "s/RailsTemplate/$lc_name/g" ./config/database.yml
+    perl -i -p -e "s/Rails_Template/$lc_name/g" ./config/database.yml
 
     pwd | grep -v rails_template | rm ./bootstrap.sh # Самоуничтажаемся
 
