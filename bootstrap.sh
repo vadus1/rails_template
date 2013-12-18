@@ -60,6 +60,7 @@ if [ -n "$name" ]; then
 
     echo "Именую проект"
     perl -i -p -e "s/RailsTemplate/$name/g" */**/*.rb **/*.rb Rakefile
+    perl -i -p -e "s/RailsTemplate/$name/g" ./config/secrets.yml
 
     echo "Устанавливаю настройки базы"
     cp ./config/database.yml.example ./config/database.yml
