@@ -4,6 +4,10 @@ ru:
     years: "%{count} лет."
     days: "%{count} дн."
     submit:
+      signup: Зарегистрироваться
+      signin: Войти
+      logout: Выйти
+      forgot_password: Забыли свой пароль?
       create: Создать
       update: Изменить
       # model:

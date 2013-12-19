@@ -25,9 +25,13 @@ ru:
       defaults:
         name: Название
         title: Название
+        remember_me: Запомнить меня
     placeholders:
       defaults:
-        title: Название
+        name: Имя
+        email: Email
+        password: Пароль
+        password_confirmation: Подтверждение пароля
     hints:
       defaults:
         price: руб.

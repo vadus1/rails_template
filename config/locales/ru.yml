@@ -33,3 +33,10 @@ ru:
       messages:
         invalid_range: Дата окончания периода должна быть больше даты начала
         intersection: Период пересекается с другим
+
+  sessions:
+    new:
+      password_reset_label: Забыли пароль?
+      password_reset_link: Восстановить пароль
+      no_account: Нет аккаунта?
+      already_account: Уже есть аккаунт?

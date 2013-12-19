@@ -3,7 +3,13 @@
 
 SimpleNavigation::Configuration.run do |navigation|
   navigation.items do |primary|
-    #primary.item :hotels, I18n.t("admin.menu.hotels"), root_url
+    if user_signed_in?
+      primary.item :edit_profile, current_user.email, edit_user_registration_path, class: 'navbar-link'
+      primary.item :logout, t('helpers.submit.logout'), destroy_user_session_path, method: :delete, class: 'navbar-link'
+    else
+      primary.item :signup, t('helpers.submit.signup'), new_user_registration_path, class: 'navbar-link'
+      primary.item :signup, t('helpers.submit.signin'), new_user_session_path, class: 'navbar-link'
+    end
 
     primary.dom_class = 'nav navbar-nav pull-right'
 
