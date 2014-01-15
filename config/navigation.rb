@@ -8,7 +8,7 @@ SimpleNavigation::Configuration.run do |navigation|
       primary.item :logout, t('helpers.submit.logout'), destroy_user_session_path, method: :delete, class: 'navbar-link'
     else
       primary.item :signup, t('helpers.submit.signup'), new_user_registration_path, class: 'navbar-link'
-      primary.item :signup, t('helpers.submit.signin'), new_user_session_path, class: 'navbar-link'
+      primary.item :signin, t('helpers.submit.signin'), new_user_session_path, class: 'navbar-link'
     end
 
     primary.dom_class = 'nav navbar-nav pull-right'
