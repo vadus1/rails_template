@@ -1,21 +1,21 @@
 source 'https://rubygems.org'
 
+ruby "2.1.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
-gem 'pg_array_parser'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0.rc1'
+gem 'sass-rails', '~> 4.0.3'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
@@ -38,41 +38,11 @@ gem 'spring',        group: :development
 #Icons
 gem "font-awesome-rails"
 
-#Простые статические страницы
-#gem 'high_voltage'
-
-#Передача данных из Rails в Js
-#application.html.haml
-#add
-#<%= include_gon %>
-#gem 'gon'
-
-#Генерация админки
-#gem 'activeadmin',           github: 'gregbell/active_admin'
-#gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
-#gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
-#rake activeadmin_wysihtml5:install:migrations
-#rake db:migrate
-
-
 # Авторизация и аутентификация
 gem 'devise'
-#rails generate devise:install
-#rails generate devise User
-#gem 'devise_invitable'
-#rails generate devise_invitable:install
-#rails generate devise_invitable MODEL
-
-#Votable
-#gem 'acts_as_votable', '~> 0.8.0'
-#rails generate acts_as_votable:migration
-#rake db:migrate
 
 # Модели, value object и form objects
-# gem 'phony_rails', :git => 'git://github.com/joost/phony_rails.git'
-gem 'active_attr'
 gem 'validates'
-gem 'hashie'
 
 # Управление версиями проекта
 gem 'semver2'
@@ -84,38 +54,13 @@ gem 'semver2'
 #Загрузка и обработка файлов
 gem 'mini_magick'
 gem 'carrierwave'
-gem 'gravatar-ultimate'
-
-# Контроллеры
-#gem 'has_scope'
-#gem 'inherited_resources'
-
-# Используется для сидирования обьектов
-#gem 'forgery'
-#gem 'ffaker'
-
-gem 'russian'
-
-# Вьюхи и презентеры
-gem 'active_link_to'
-
-#gem 'draper'
-#gem 'cells'
-
-#Хлебные крошки
-#gem 'breadcrumbs_on_rails'
-#Табы
-#gem 'tabulous'
-
-#Коллекция иконок соц-сетей
-#gem 'authbuttons-rails'
 
 #Навигация
 gem 'simple-navigation', :git => 'git://github.com/andi/simple-navigation.git'
 gem 'simple-navigation-bootstrap'
 
 #Формы
-gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
+gem 'simple_form'
 
 #Пэйджинг
 gem 'kaminari'
@@ -123,16 +68,8 @@ gem 'kaminari-bootstrap', '~> 3.0.1'
 
 gem 'haml-rails'
 
-# Очередь
-#gem 'redis-namespace'
-#gem 'resque'
-#gem 'resque-pool'
-#gem 'resque-status'
-
-#Errbit
-gem 'airbrake', :github => 'airbrake/airbrake'
-
-gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'bootstrap-sass'
+gem 'compass'
 gem 'compass-rails'
 
 #assets
